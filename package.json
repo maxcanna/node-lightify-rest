@@ -1,0 +1,33 @@
+{
+  "name": "node-lightify-rest",
+  "version": "1.0.0",
+  "description": "Node.js library to use Osram Lightify REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "node_modules/.bin/jshint $(find . ! -path '*node_modules*' -name '*.js')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxcanna/node-lightify-rest.git"
+  },
+  "keywords": [
+    "lightify",
+    "osram",
+    "node",
+    "rest"
+  ],
+  "author": "Massimiliano Cannarozzo <massi@massi.ws>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/maxcanna/node-lightify-rest/issues"
+  },
+  "homepage": "https://github.com/maxcanna/node-lightify-rest#readme",
+  "dependencies": {
+    "request": "^2.74.0",
+    "request-promise": "^4.1.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.2"
+  }
+}
