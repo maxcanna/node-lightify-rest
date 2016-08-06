@@ -16,7 +16,7 @@ var lightify = new Lightify({
     'username': 'user@example.com',
     'password': 'thisisaverylongandsecurepassword',
     'serial': 'OSR0000000A',
-    'region': Lightify.REGION_EU, //For Europe or Lightify.REGION_US for US, CA, AUS
+    'region': Lightify.Regions.eu, //For Europe or Lightify.Regions.us for US, CA, AUS
 });
 
 lightify
