@@ -39,7 +39,7 @@ lightify
 | level | number | Dimming level | 0.000 to 1.000
 | onoff | number | On/Off state | 0 or 1
 | recallSceneId | string | Recall Scene Id | 1, 2-1
-| saturation | number | Saturation | valid range 0.000 to 1.000
+| saturation | number | Saturation | 0.000 to 1.000
 | securityToken | string | Security token for Authorization
 | time | number | Transition time in 1/10th of a second | 100
 
