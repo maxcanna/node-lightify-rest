@@ -16,7 +16,7 @@ var lightify = new Lightify({
     'username': 'user@example.com',
     'password': 'thisisaverylongandsecurepassword',
     'serial': 'OSR0000000A',
-    'region': Lightify.REGION_EU, //For Europe or Lightify.REGION_US for US, CA, AUS
+    'region': Lightify.Regions.eu, //For Europe or Lightify.Regions.us for US, CA, AUS
 });
 
 lightify
@@ -27,6 +27,21 @@ lightify
 
 ## Documentation
 [Osram Lightify REST API official documentation](https://eu.lightify-api.org/lightify/)
+
+### Parameters
+| Name | Data type | Description | Example
+|-|-|-|-|
+| apiVersion | string | API version | 1.0.0
+| color | string | Hex Color | FF0000
+| ctemp | number | Color temperature | 1000 to 8000
+| hue | number | Hue | 1.000 to 360.000
+| idx | number | Index of the device | 1
+| level | number | Dimming level | 0.000 to 1.000
+| onoff | number | On/Off state | 0 or 1
+| recallSceneId | string | Recall Scene Id | 1, 2-1
+| saturation | number | Saturation | valid range 0.000 to 1.000
+| securityToken | string | Security token for Authorization
+| time | number | Transition time in 1/10th of a second | 100
 
 ## API
 All API methods are available using corresponding method of `Lightify` class.
