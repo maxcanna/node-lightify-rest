@@ -19,16 +19,19 @@ npm version minor || exit 1
 # Generate changelog from pull requests
 github-changes -o maxcanna \
   -r node-lightify-rest \
-  --auth --verbose \
+  --verbose \
   --file CHANGELOG.md \
   --only-pulls --use-commit-body \
-  --date-format '- YYYY-MM-DD' \
+  --date-format 'YYYY-MM-DD' \
+  --title 'Change Log
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](http://semver.org/).' \
   || exit 1
 
 # Since the tag for the new version hasn't been pushed yet, any changes in it
 # will be marked as "upcoming"
 version="$(grep '"version"' package.json | cut -d'"' -f4)"
-sed -i -e "s/^### upcoming/## [$version]/" CHANGELOG.md
+sed -i -e "s/^### upcoming/## v$version -/" CHANGELOG.md
 
 # This may fail if no changelog updates
 git add CHANGELOG.md; git commit -m 'Update changelog'
