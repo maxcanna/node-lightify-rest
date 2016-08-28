@@ -1,6 +1,6 @@
 {
   "name": "node-lightify-rest",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.js library to use Osram Lightify REST API",
   "main": "index.js",
   "scripts": {
