@@ -70,14 +70,14 @@ class Lightify {
         return this.request.doRequest({
             method: 'GET',
             url: 'group/set',
-            qs: parameters
+            qs: parameters,
         });
     }
 
     getDevices() {
         return this.request.doRequest({
             method: 'GET',
-            url: 'devices'
+            url: 'devices',
         });
     }
 
@@ -88,28 +88,28 @@ class Lightify {
 
         return this.request.doRequest({
             method: 'GET',
-            url: `devices/${idx}`
+            url: `devices/${idx}`,
         });
     }
 
     getGateway() {
         return this.request.doRequest({
             method: 'GET',
-            url: 'gateway'
+            url: 'gateway',
         });
     }
 
     getGroups() {
         return this.request.doRequest({
             method: 'GET',
-            url: 'groups'
+            url: 'groups',
         });
     }
 
     getApiVersion() {
         return this.request.doRequest({
             method: 'GET',
-            url: 'version'
+            url: 'version',
         });
     }
 }
