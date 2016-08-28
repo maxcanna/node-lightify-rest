@@ -11,5 +11,7 @@ engines:
     enabled: true
   fixme:
     enabled: true
-  nodesecurity:
+  shellcheck:
+    enabled: true
+  markdownlint:
     enabled: true
