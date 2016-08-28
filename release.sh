@@ -31,7 +31,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).' \
 # Since the tag for the new version hasn't been pushed yet, any changes in it
 # will be marked as "upcoming"
 version="$(grep '"version"' package.json | cut -d'"' -f4)"
-sed -i -e "s/^### upcoming/## v$version -/" CHANGELOG.md
+sed -i -e "s/^### upcoming/### v$version -/" CHANGELOG.md
 
 # This may fail if no changelog updates
 git add CHANGELOG.md; git commit -m 'Update changelog'
