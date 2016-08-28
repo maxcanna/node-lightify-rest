@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -z "`which github-changes`" ]; then
+if [ -z "$(which github-changes)" ]; then
   # specify version because github-changes "is under heavy development. Things
   # may break between releases" until 0.1.0
   echo "First, do: [sudo] npm install -g github-changes@0.0.14"
