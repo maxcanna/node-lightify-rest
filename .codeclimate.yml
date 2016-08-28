@@ -13,3 +13,5 @@ engines:
     enabled: true
   shellcheck:
     enabled: true
+  markdownlint:
+    enabled: true
