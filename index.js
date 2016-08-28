@@ -2,6 +2,7 @@
  * Created by massimilianocannarozzo on 04/08/16.
  */
 
+"use strict";
 const Request = require('./lib/request')
     , BPromise = require('bluebird');
 
