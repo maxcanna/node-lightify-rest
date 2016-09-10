@@ -7,11 +7,10 @@ engines:
   eslint:
     enabled: true
     channel: "eslint-2"
-  csslint:
-    enabled: true
   fixme:
     enabled: true
   shellcheck:
     enabled: true
-  markdownlint:
-    enabled: true
+ratings:
+    paths:
+    - "**.js"
