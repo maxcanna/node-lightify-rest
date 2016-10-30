@@ -23,6 +23,7 @@
     "url": "https://github.com/maxcanna/node-lightify-rest/issues"
   },
   "homepage": "https://github.com/maxcanna/node-lightify-rest#readme",
+  "tonicExampleFilename": "examples/flashAll.js",
   "dependencies": {
     "request": "^2.74.0",
     "request-promise": "^4.1.0"
