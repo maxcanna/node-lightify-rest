@@ -2,7 +2,7 @@
  * Created by massimilianocannarozzo on 06/08/16.
  */
 
-var Lightify = require('./../index');
+var Lightify = require('node-lightify-rest');
 
 var lightify = new Lightify({
     'username': '',
