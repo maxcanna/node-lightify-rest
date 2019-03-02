@@ -17,7 +17,7 @@
     "node",
     "rest"
   ],
-  "author": "Massimiliano Cannarozzo <massi@massi.ws>",
+  "author": "Massimiliano Cannarozzo <massi@massi.dev>",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/maxcanna/node-lightify-rest/issues"
