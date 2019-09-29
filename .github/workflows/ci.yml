@@ -1,0 +1,19 @@
+name: CI
+
+on: [push]
+
+jobs:
+  ci:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v1
+    - name: Setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.16.0
+    - name: Install yarn and run tests
+      run: |
+        npm install --global yarn@1.16.0
+        yarn
+        yarn test
